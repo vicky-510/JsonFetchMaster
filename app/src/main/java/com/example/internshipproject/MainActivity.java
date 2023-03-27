@@ -3,8 +3,13 @@ package com.example.internshipproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -18,6 +23,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     ListView listview;
+    List<String> listViewValues;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             JSONObject jsonObject=new JSONObject(loadJsonFile());
             JSONArray jsonArray=jsonObject.getJSONArray("studentdeatils");
-            List<String> listViewValues = new ArrayList<String>();
+            listViewValues = new ArrayList<String>();
             for(int i=0; i<jsonArray.length();i++)
             {
                 JSONObject obj=jsonArray.getJSONObject(i);
