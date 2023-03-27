@@ -1,0 +1,13 @@
+{"studentdeatils":[
+  {
+    "naanmudhalvanid":"1",
+    "name":"Raj",
+    "class": "B.sc(computer science)",
+    "email":"raj@gmail.com",
+    "age": "19",
+    "dob": "26.04.2003",
+    "address": "Chennai",
+    "mobilenumber": "9962416758"
+  }
+]
+}
