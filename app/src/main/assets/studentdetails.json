@@ -1,9 +1,9 @@
 {"studentdeatils":[
   {
     "naanmudhalvanid":"1",
-    "name":"Raj",
-    "class": "B.sc(computer science)",
-    "email":"raj@gmail.com",
+    "name":"test",
+    "standard": "B.sc(computer science)",
+    "email":"test@gmail.com",
     "age": "19",
     "dob": "26.04.2003",
     "address": "Chennai",
