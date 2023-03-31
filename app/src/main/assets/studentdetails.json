@@ -1,7 +1,8 @@
-{"studentdeatils":[
+{"studentdetails":[
   {
     "naanmudhalvanid":"1",
-    "name":"test",
+    "name":"Test",
+    "collegename": "xyx arts and college",
     "standard": "B.sc(computer science)",
     "email":"test@gmail.com",
     "age": "19",
