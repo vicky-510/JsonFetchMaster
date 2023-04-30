@@ -9,6 +9,17 @@
     "address": "4/11, Ganapathy servai street, k.pudur, Madurai-625007",
     "mobilenumber": "8189950272",
     "Comments": "This is my new commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104003",
+    "name":"Balagi P",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "13.09.2001",
+    "address": "Alanganallur",
+    "mobilenumber": "9876543210",
+    "Comments": "This is my next commit"
   }
 ]
 }

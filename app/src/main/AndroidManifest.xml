@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Internship"
         tools:targetApi="31">
+        <activity
+            android:name=".contact"
+            android:exported="true" />
+        <activity
+            android:name=".academic"
+            android:exported="true" />
+        <activity
+            android:name=".about"
+            android:exported="true" />
+        <activity
+            android:name=".photoView"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
