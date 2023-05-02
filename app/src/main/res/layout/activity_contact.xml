@@ -56,11 +56,25 @@
         app:layout_constraintTop_toTopOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.108" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="181dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="332dp"
+        android:padding="20dp"
+        android:text="Go back"
+        app:layout_constraintBottom_toTopOf="@+id/txt_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.166"
+        tools:ignore="HardcodedText" />
+
     <TextView
         android:id="@+id/txt_down"
         android:layout_width="266dp"
         android:layout_height="38dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center_horizontal"
         android:text="Nila Apps Project"
         android:textColor="#7300FF"

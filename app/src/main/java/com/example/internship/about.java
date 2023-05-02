@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,7 +15,7 @@ import org.json.JSONObject;
 public class about extends AppCompatActivity {
     TextView txt_down,txt_up,txt_banner;
     TextView textViewDetails;
-
+    Button button1;
     ImageView image_view;
 
     @SuppressLint("MissingInflatedId")
@@ -28,12 +29,21 @@ public class about extends AppCompatActivity {
         txt_up = findViewById(R.id.txt_up);
         txt_banner = findViewById(R.id.txt_banner);
         txt_down = findViewById(R.id.txt_down);
+        button1 = findViewById(R.id.button1);
+
 
         textViewDetails = findViewById(R.id.txt_up);
         String details = getIntent().getStringExtra("message_key");
 
         // display the string into textView
         textViewDetails.setText(details);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(about.this,photoView.class);
+                startActivity(intent);            }
+        });
+
 
     }
 }
