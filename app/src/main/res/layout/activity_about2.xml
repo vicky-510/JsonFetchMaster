@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".contact">
-
+    tools:context=".About">
 
     <ImageView
         android:id="@+id/imageView"
@@ -25,7 +24,7 @@
         android:layout_width="268dp"
         android:layout_height="38dp"
         android:gravity="center_horizontal"
-        android:text="Contact"
+        android:text="About Me"
         android:textColor="#FFFFFF"
         android:textFontWeight="1000"
         android:textSize="35dp"
@@ -54,20 +53,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.108" />
+        app:layout_constraintVertical_bias="0.108"
+        tools:ignore="PxUsage,UnusedAttribute" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="181dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="332dp"
-        android:padding="20dp"
+        android:layout_width="361dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="324dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:text="Go back"
+        android:gravity="center_horizontal"
+        android:drawableLeft="@drawable/back_last"
+        android:paddingEnd="140dp"
+        android:paddingStart="120dp"
         app:layout_constraintBottom_toTopOf="@+id/txt_down"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.166"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="HardcodedText" />
 
     <TextView
@@ -85,7 +90,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.975"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="HardcodedText,PxUsage,SpUsage,TextSizeCheck,UnusedAttribute" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

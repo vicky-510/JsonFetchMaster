@@ -38,7 +38,7 @@
         android:id="@+id/button1"
         android:layout_width="361dp"
         android:layout_height="73dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="36dp"
         android:padding="20dp"
         android:text="About me"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,14 +57,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1"
-        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="361dp"
         android:layout_height="73dp"
-        android:layout_marginTop="276dp"
+        android:layout_marginTop="236dp"
         android:padding="20dp"
         android:text="contact me"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,21 +72,40 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="HardcodedText" />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="361dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="324dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Main Menu"
+        android:gravity="center_horizontal"
+        android:drawableRight="@drawable/icon_home"
+        android:paddingEnd="100dp"
+        android:paddingStart="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.295"
+        tools:ignore="HardcodedText" />
+
     <TextView
         android:id="@+id/txt_down"
         android:layout_width="266dp"
         android:layout_height="38dp"
+        android:gravity="center_horizontal"
         android:text="Nila Apps Project"
         android:textColor="#7300FF"
         android:textFontWeight="1000"
         android:textSize="14dp"
-        android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.676"
+        app:layout_constraintVertical_bias="0.927"
         tools:ignore="HardcodedText,PxUsage,SpUsage,TextSizeCheck,UnusedAttribute" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

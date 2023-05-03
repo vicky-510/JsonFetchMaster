@@ -8,38 +8,32 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-
-
-public class academic extends AppCompatActivity {
-    TextView txt_down,txt_up,txt_banner;
-    TextView textViewDetails;
-
+public class About extends AppCompatActivity {
+    TextView txtTitle, txtBanner, txtDescription;
     Button btnViewPhoto;
-    ImageView image_view;
-    //Button button1,button2,button3;
+    ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_academic);
+        setContentView(R.layout.activity_about2);
 
-        image_view = findViewById(R.id.imageView);
-
-        txt_banner = findViewById(R.id.txt_banner);
-        txt_down = findViewById(R.id.txt_down);
+        // Initialize views
+        imageView = findViewById(R.id.imageView);
+        txtTitle = findViewById(R.id.txt_up);
+        txtBanner = findViewById(R.id.txt_banner);
+        txtDescription = findViewById(R.id.txt_down);
         btnViewPhoto = findViewById(R.id.button1);
 
-
-        textViewDetails = findViewById(R.id.txt_up);
+        // Get details from previous activity
         String details = getIntent().getStringExtra("message_key");
 
-        // display the string into textView
-        textViewDetails.setText(details);
+        // Display details in the title
+        txtTitle.setText(details);
         btnViewPhoto.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), photoView.class));
             finish();
         });
-
 
     }
 }
