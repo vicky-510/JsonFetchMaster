@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,37 +32,42 @@ public class photoView extends AppCompatActivity {
         academicButton = findViewById(R.id.button2);
         contactButton = findViewById(R.id.button3);
         mainButton = findViewById(R.id.button4);
-        String details = getIntent().getStringExtra("details");
 
-        try {
-            JSONObject jsonObject = new JSONObject(getIntent().getStringExtra("details"));
+        String detailsString = getIntent().getStringExtra("details");
 
-            String name = jsonObject.getString("name");
-            String naanmudhalvanid = jsonObject.getString("naanmudhalvanid");
-            String collegename = jsonObject.getString("collegename");
-            String standard = jsonObject.getString("standard");
-            String age = jsonObject.getString("age");
-            String dob = jsonObject.getString("dob");
-            String address = jsonObject.getString("address");
-            String mobilenumber = jsonObject.getString("mobilenumber");
+        if (detailsString == null) {
+            Toast.makeText(this, "You will be redirected to Main Page", Toast.LENGTH_SHORT).show();
+            finish();
+        } else {
+            try {
+                JSONObject jsonObject = new JSONObject(detailsString);
 
-            nameTextView.setText(name);
-            String formattedDetails = String.format(Locale.getDefault(), "Name: %s\n\nAge: %s\n\nDOB: %s", name, age, dob);
-            aboutButton.setOnClickListener(v -> startNewActivity(About.class, formattedDetails));
-            String formattedDetails2 = String.format(Locale.getDefault(), "Naan mudhalvan ID: %s\n\nStandard: %s\n\nCollege name: %s", naanmudhalvanid, standard, collegename);
-            academicButton.setOnClickListener(v -> startNewActivity(academic.class, formattedDetails2));
-            String formattedDetails3 = String.format(Locale.getDefault(), "Name: %s\n\nAddress: %s\n\nMobile number: %s", name, address, mobilenumber);
-            contactButton.setOnClickListener(v -> startNewActivity(Contact.class, formattedDetails3));
-            mainButton.setOnClickListener(view -> {
-                Intent intent = new Intent(photoView.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            });
+                String name = jsonObject.getString("name");
+                String naanmudhalvanid = jsonObject.getString("naanmudhalvanid");
+                String collegename = jsonObject.getString("collegename");
+                String standard = jsonObject.getString("standard");
+                String age = jsonObject.getString("age");
+                String dob = jsonObject.getString("dob");
+                String address = jsonObject.getString("address");
+                String mobilenumber = jsonObject.getString("mobilenumber");
 
-        } catch (JSONException e) {
-            e.printStackTrace();
+                nameTextView.setText(name);
+                String formattedDetails = String.format(Locale.getDefault(), "Name: %s\n\nAge: %s\n\nDOB: %s", name, age, dob);
+                aboutButton.setOnClickListener(v -> startNewActivity(About.class, formattedDetails));
+                String formattedDetails2 = String.format(Locale.getDefault(), "Naan mudhalvan ID: %s\n\nStandard: %s\n\nCollege name: %s", naanmudhalvanid, standard, collegename);
+                academicButton.setOnClickListener(v -> startNewActivity(academic.class, formattedDetails2));
+                String formattedDetails3 = String.format(Locale.getDefault(), "Name: %s\n\nAddress: %s\n\nMobile number: %s", name, address, mobilenumber);
+                contactButton.setOnClickListener(v -> startNewActivity(Contact.class, formattedDetails3));
+                mainButton.setOnClickListener(view -> {
+                    Intent intent = new Intent(photoView.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                });
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
-
     }
 
     private void startNewActivity(Class<?> cls, String formattedDetails) {
