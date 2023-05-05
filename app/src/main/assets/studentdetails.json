@@ -16,10 +16,133 @@
     "collegename": "K.L.N College of Information Technology",
     "standard": "B.E(computer science and Engineering)",
     "age": "21",
-    "dob": "13.09.2001",
+    "dob": "13.09.2002",
     "address": "Alanganallur",
     "mobilenumber": "9876543210",
     "Comments": "This is my next commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104033",
+    "name":"Vishnu chidambaram",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "21.11.2001",
+    "address": "Pudhukottai",
+    "mobilenumber": "8876443210",
+    "Comments": "This is my next commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104014",
+    "name":"Karthikeyan M",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "23.08.2001",
+    "address": "Sellur, Madurai",
+    "mobilenumber": "9672543410",
+    "Comments": "This is my next commit"
+  },{
+    "naanmudhalvanid":"au910719104016",
+    "name":"Mathew akash",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "19.07.2001",
+    "address": "Kodaikanal",
+    "mobilenumber": "9994625855",
+    "Comments": "This is my new commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104004",
+    "name":"Balasundar",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "10.03.2002",
+    "address": "Ramanathapuram",
+    "mobilenumber": "9782654895",
+    "Comments": "This is my next commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104019",
+    "name":"Hari krishnan",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "22.10.2001",
+    "address": "Virudhunagar",
+    "mobilenumber": "9276423210",
+    "Comments": "This is my next commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104023",
+    "name":"Rubin Raj",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "18.12.2001",
+    "address": "Villapuram, Madurai",
+    "mobilenumber": "8672543410",
+    "Comments": "This is my next commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104027",
+    "name":"Rathinavel",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "20.02.2001",
+    "address": "Paramakudi",
+    "mobilenumber": "9186950272",
+    "Comments": "This is my new commit"
+  },
+
+  {
+    "naanmudhalvanid":"au910719104018",
+    "name":"Mohammed nafees",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "10.05.2001",
+    "address": "Kanyakumari",
+    "mobilenumber": "9578543410",
+    "Comments": "This is my next commit"
+  },
+
+  {
+    "naanmudhalvanid":"au9107191040028",
+    "name":"Rajesh",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "12.10.2001",
+    "address": "Thiruppuvanam Pudur",
+    "mobilenumber": "9976543210",
+    "Comments": "This is my next commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104025",
+    "name":"Surya Prakash",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "23.10.2002",
+    "address": "Thiruppachethi",
+    "mobilenumber": "9776443210",
+    "Comments": "This is my next commit"
+  },
+  {
+    "naanmudhalvanid":"au910719104024",
+    "name":"Selvam",
+    "collegename": "K.L.N College of Information Technology",
+    "standard": "B.E(computer science and Engineering)",
+    "age": "21",
+    "dob": "22.06.2001",
+    "address": "Arathangi",
+    "mobilenumber": "8178543410",
+    "Comments": "This is my next commit"
   }
+
 ]
 }

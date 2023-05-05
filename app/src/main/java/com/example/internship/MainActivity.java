@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +24,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     ListView listview;
+    TextView txt_up;
 
     List<String> listViewValues;
     List<String> listViewDetails = new ArrayList<>();
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listview = findViewById(R.id.mobile_list);
+        txt_up = findViewById(R.id.txt_up);
+
 
 
 

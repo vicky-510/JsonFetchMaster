@@ -20,19 +20,20 @@
 
     <TextView
         android:id="@+id/txt_up"
-        android:layout_width="235dp"
-        android:layout_height="65dp"
-        android:text=""
-        android:textSize="35sp"
-        android:textFontWeight="900"
+        android:layout_width="355dp"
+        android:layout_height="136dp"
         android:fontFamily="cursive"
-        android:textColor="@color/white"
         android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/white"
+        android:textFontWeight="900"
+        android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.67" />
+        app:layout_constraintVertical_bias="0.66" />
 
     <Button
         android:id="@+id/button1"
@@ -84,6 +85,7 @@
         android:drawableRight="@drawable/icon_home"
         android:paddingEnd="100dp"
         android:paddingStart="130dp"
+        android:backgroundTint="#971BAC"
         app:layout_constraintBottom_toTopOf="@+id/txt_down"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +99,7 @@
         android:layout_height="38dp"
         android:gravity="center_horizontal"
         android:text="Nila Apps Project"
-        android:textColor="#7300FF"
+        android:textColor="#000000"
         android:textFontWeight="1000"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
